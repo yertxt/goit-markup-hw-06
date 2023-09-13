@@ -78,33 +78,59 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="unstyle" data-modal-close>
-              <svg class="modal-close-button">
+              <svg class="modal-close-button marg-0">
                 <use href="./resources/icons/icons.svg#icon-eclipse"></use>
               </svg>
             </button>
-            <div class="form_modal">
-              <h2>Deje sus datos, nos contactaremos con usted</h2>
-              <label for="username">Nombre</label>
-              <input type="text" id="username" />
+            <form class="form_modal">
+              <h2 class="marg-0 h2_modal">
+                Deje sus datos, nos contactaremos con usted
+              </h2>
+              <div>
+                <label for="username">Nombre</label>
+                <svg class="icons_form_modal">
+                  <use href="./resources/icons/icons.svg#icon-persona-modal" ></use>
+                </svg>
+                <input class="input_form_modal" type="text" id="username" />
+              </div>
 
-              <label for="telephone">Teléfono</label>
-              <input type="text" id="telephone" />
+              <div>
+                <label for="telephone">Teléfono</label>
+                <svg class="icons_form_modal">
+                  <use href="./resources/icons/icons.svg#icon-telefono-modal" ></use>
+                </svg>
+                <input class="input_form_modal" type="text" id="telephone" />
+              </div>
 
-              <label for="e-mail">E-mail</label>
-              <input type="email" id="e-mail" />
+              <div>
+                <label for="e-mail">E-mail</label>
+                <svg class="icons_form_modal">
+                  <use href="./resources/icons/icons.svg#icon-correo-modal" ></use>
+                </svg>
+                <input class="input_form_modal" type="email" id="e-mail" />
+              </div>
 
-              <label for="comment">Comentarios</label>
-              <textarea type="text-" id="comment"></textarea>
+              <div>
+                <label for="comment">Comentarios</label>
+                <textarea class="textarea" id="comment"></textarea>
+              </div>
 
-              <label for="checkbox"
+              <div>
+                <svg class="icons_form_modal">
+                  <use href="./resources/icons/icons.svg#icon-casilla-verificacion" ></use>
+                </svg>
+                <label for="checkbox"
                 >Estoy de acuerdo con el boletín informativo y acepto los
                 Términos y Condiciones</label
-              >
-              <input type="checkbox" id="checkbox" />
+                >
+                <input type="checkbox" id="checkbox" />
+              </div>
 
-              <label for="button_modal"></label>
-              <button type="submit" id="button_modal">Enviar</button>
-            </div>
+              <div>
+                <label for="button_modal"></label>
+                <button type="submit" id="button_modal">Enviar</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -520,7 +546,7 @@
           </ul>
         </div>
 
-        <div class="form_footer">
+        <form class="form_footer">
           <h2 class="h2_footer">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h2>
           <label for="footer_email"></label>
           <input
@@ -539,7 +565,7 @@
               </svg>
             </div>
           </button>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
