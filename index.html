@@ -86,49 +86,98 @@
               <h2 class="marg-0 h2_modal">
                 Deje sus datos, nos contactaremos con usted
               </h2>
-              <div>
-                <label for="username">Nombre</label>
-                <svg class="icons_form_modal">
-                  <use href="./resources/icons/icons.svg#icon-persona-modal" ></use>
-                </svg>
-                <input class="input_form_modal" type="text" id="username" />
+              <div class="area_form_modal">
+                <label class="form_label--style" for="username">Nombre</label>
+                <div class="area_input_form">
+                  <input
+                    class="input_form_modal"
+                    type="text"
+                    id="username"
+                    placeholder=" "
+                  />
+                  <svg class="icons_form_modal">
+                    <use
+                      href="./resources/icons/icons.svg#icon-persona-modal"
+                    ></use>
+                  </svg>
+                </div>
               </div>
 
-              <div>
-                <label for="telephone">Teléfono</label>
-                <svg class="icons_form_modal">
-                  <use href="./resources/icons/icons.svg#icon-telefono-modal" ></use>
-                </svg>
-                <input class="input_form_modal" type="text" id="telephone" />
-              </div>
-
-              <div>
-                <label for="e-mail">E-mail</label>
-                <svg class="icons_form_modal">
-                  <use href="./resources/icons/icons.svg#icon-correo-modal" ></use>
-                </svg>
-                <input class="input_form_modal" type="email" id="e-mail" />
-              </div>
-
-              <div>
-                <label for="comment">Comentarios</label>
-                <textarea class="textarea" id="comment"></textarea>
-              </div>
-
-              <div>
-                <svg class="icons_form_modal">
-                  <use href="./resources/icons/icons.svg#icon-casilla-verificacion" ></use>
-                </svg>
-                <label for="checkbox"
-                >Estoy de acuerdo con el boletín informativo y acepto los
-                Términos y Condiciones</label
+              <div class="area_form_modal">
+                <label class="form_label--style" for="telephone"
+                  >Teléfono</label
                 >
-                <input type="checkbox" id="checkbox" />
+                <div class="area_input_form">
+                  <input
+                    class="input_form_modal"
+                    type="text"
+                    id="telephone"
+                    placeholder=" "
+                  />
+                  <svg class="icons_form_modal">
+                    <use
+                      href="./resources/icons/icons.svg#icon-telefono-modal"
+                    ></use>
+                  </svg>
+                </div>
               </div>
 
-              <div>
+              <div class="area_form_modal">
+                <label class="form_label--style" for="e-mail">E-mail</label>
+                <div class="area_input_form">
+                  <input
+                    class="input_form_modal"
+                    type="email"
+                    id="e-mail"
+                    placeholder=" "
+                  />
+                  <svg class="icons_form_modal">
+                    <use
+                      href="./resources/icons/icons.svg#icon-correo-modal"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="area_form_modal">
+                <label class="form_label--style" for="comment"
+                  >Comentarios</label
+                >
+                <textarea
+                  class="textarea"
+                  id="comment"
+                  placeholder="Introduzca el texto"
+                ></textarea>
+              </div>
+
+              <div class="area_form_modal">
+                <label class="form_label--style" class="check"
+                  ><input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="policy"
+                    value="accept"
+                  />
+                  <span class="checkbox"
+                    ><svg class="form_checkbox__icon">
+                      <use
+                        href="./resources/icons/icons.svg#icon-casilla-verificacion"
+                      ></use>
+                    </svg>
+                  </span>
+
+                  <span class="checkbox__text">
+                    Estoy de acuerdo con el boletín informativo y acepto los
+                    Términos y Condiciones</span
+                  >
+                </label>
+              </div>
+
+              <div class="area__buttom__form">
                 <label for="button_modal"></label>
-                <button type="submit" id="button_modal">Enviar</button>
+                <button class="button__form" type="submit" id="button_modal">
+                  Enviar
+                </button>
               </div>
             </form>
           </div>
