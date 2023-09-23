@@ -275,18 +275,16 @@ img {
 }
 
 .modal-close-button {
-  width: 30px;
-  height: 30px;
-  fill: #fff;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
+  width: 18px;
+  height: 18px;
   margin: 8px;
+  fill: currentColor;
   cursor: pointer;
 }
 
-/* .unstyle:hover > .modal-close-button {
+.unstyle:hover > .modal-close-button {
   fill: var(--brand-color-blue);
-} */
+}
 
 .unstyle {
   all: unset;
@@ -315,14 +313,6 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
-}
-
-.form_label--style {
-  color: var(--brand-color-grey);
-  font-family: 'Roboto';
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.12px;
 }
 
 .area_input_form {
@@ -363,25 +353,7 @@ img {
 
 .check {
   display: flex;
-  column-gap: 7px;
-  flex-direction: row;
   align-items: center;
-}
-
-.form_checkbox__icon {
-  width: 18px;
-  height: 16px;
-  top: -2px;
-  left: -2px;
-  /* opacity: 0; */
-  transition: opacity 250ms var(--brand-standar-animation);
-}
-
-.checkbox {
-  width: 18px;
-  height: 16px;
-  transition: background-color 250ms var(--brand-standar-animation),
-    border-color 250ms var(--brand-standar-animation);
 }
 
 .checkbox_input {
@@ -389,6 +361,40 @@ img {
   position: absolute;
   /* width: 18px;
   height: 16px; */
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 15px;
+  border: 2px solid var(--brand-color-black);
+  border-radius: 2px;
+  transition: background-color 250ms var(--brand-standar-animation),
+    border-color 250ms var(--brand-standar-animation);
+}
+
+.form_checkbox__icon {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 16px;
+  height: 15px;
+  opacity: 0;
+  transition: opacity 250ms var(--brand-color-black);
+}
+
+.checkbox_input:focus + .checkbox {
+  border-color: var(--brand-color-blue);
+}
+
+.checkbox_input:checked + .checkbox {
+  border-color: var(--brand-color-blue);
+  background-color: var(--brand-color-blue);
+}
+
+.checkbox_input:checked + .checkbox .form_checkbox__icon {
+  opacity: 1;
 }
 
 .checkbox__text {
@@ -399,6 +405,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.42px;
   font-family: 'Roboto';
+  padding: 7px;
 }
 
 .textarea {
@@ -630,6 +637,13 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--brand-standar-white);
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  transition: border 250ms var(--brand-standar-animation);
 }
 
 .input_footer::placeholder {
@@ -639,17 +653,20 @@ img {
   flex-direction: column;
   justify-content: center;
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
 
-/* .input_footer:focus, .input_footer:focus-visible, .input_footer:focus-within, .input_footer:active{
-  border: 1px solid var(--brand-color-blue);
+.input_footer:focus,
+.input_footer:focus-visible,
+.input_footer:focus-within,
+.input_footer:active {
+  border: 1px solid var(--brand-color-blueb);
   outline: none;
-} */
+}
 
 .button_footer {
   width: 200px;
