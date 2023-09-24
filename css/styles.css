@@ -262,7 +262,7 @@ img {
 
 .modal {
   width: 528px;
-  height: 581px;
+  height: 600px;
   border-radius: 4px;
   background: var(--brand-standar-white);
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
@@ -288,7 +288,11 @@ img {
 
 .unstyle {
   all: unset;
-  padding: 8px;
+  padding: 6px;
+  height: 18px;
+  border: 1px solid var(--brand-color-blackb);
+  border-radius: 100%;
+  margin: 8px;
 }
 
 .form_modal {
@@ -313,6 +317,7 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
+  margin-bottom: 10px !important;
 }
 
 .area_input_form {
@@ -443,7 +448,6 @@ img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  padding-bottom: 40px;
 }
 
 .button__form {
@@ -644,6 +648,7 @@ img {
   font-weight: 400;
   letter-spacing: 0.48px;
   transition: border 250ms var(--brand-standar-animation);
+  padding-left: 8px;
 }
 
 .input_footer::placeholder {
@@ -723,7 +728,8 @@ img {
 }
 
 .port-button:hover,
-.port-button:focus {
+.port-button:focus,
+.port-button:active {
   background: var(--brand-color-blue);
   color: var(--brand-standar-white);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
